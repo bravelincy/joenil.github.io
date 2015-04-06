@@ -1,8 +1,189 @@
----
-layout: default
-title: 林朝涌的个人主页
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人简历</title>
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<style>
+	body {
+		font-family: Arial, "Hiragino Sans GB", "Microsoft YaHei";
+		background: #F2F2F2;
+	}
+	h1, h2, h3 {
+		font-weight: 400;
+	}
+	.container {
+		width: 960px;
+	}
+	.header{
+		background: linear-gradient(88deg , #032c60, #925FD2);
+		text-align: center;
+		margin-bottom: 4.5em;
+		padding: 2em 0;
+		color: #FFF;
+	}
+	.photo {
+		width: 9em;
+		height: 9em;
+		margin: auto;
+		background: #FFF;
+		border-radius: 50%;
+		overflow: hidden;
+		border: 4px solid #FFF;
+	}
+	.header p {
+		opacity: .5;
+	}
+	
+	.resume-dl {
+		margin: 0;
+	}
 
-<h2>{{ page.title }}</h2>
-To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
-To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+	.resume-dl dt, .resume-dl dd {
+		line-height: 2;
+		font-size: 1.2em;
+	}
+
+	.resume-dl .col-md-2, .resume-dl .col-md-12 {
+		padding-left: 0;
+	}
+
+	.progress {
+		margin: 10px 0;
+	}
+
+	.footer {
+		padding: 1.5em 0;
+		font-size: 1.2em;
+		border-top: 1px solid #DDD;
+		background: #333;
+	}
+	</style>
+</head>
+<body>
+	<div class="container-fluid header">
+		<div class="container">
+			<div class="photo">
+				<img src="images/photo.png" class="img-responsive">
+			</div>
+			<h1 class="text-center">林朝涌</h1>
+			<p>比设计师更懂编程，比程序员更懂设计，我是Web程序员，我为自己带盐。</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">
+					<H3>
+						<span class="glyphicon glyphicon-list-alt"></span>&nbsp;个人简历
+					</H3>
+				</div>
+			</div>
+			<div class="panel-body">
+				<dl class="dl-horizontal resume-dl">
+					<dt>姓名：</dt>
+					<dd>林朝涌</dd>
+					<dt>性别：</dt>
+					<dd>男</dd>
+					<dt>出生年月：</dt>
+					<dd>1993-05-24</dd>
+					<dt>学历：</dt>
+					<dd>高中</dd>
+					<dt>职业：</dt>
+					<dd>Web前端开发工程师</dd>
+					<dt>技能评价：</dt>
+					<dd>
+						<div class="col-md-12">
+							<div class="col-md-2 skill">
+								<span class="label label-primary">HTML</span>
+							</div>
+							<div class="col-md-9">
+								<div class="progress">
+									<div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="60" style="width: 90%;">
+										90%
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1">
+								<small class="text-muted">精通</small>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="col-md-2 skill">
+								<span class="label label-success">CSS</span>
+							</div>
+							<div class="col-md-9">
+								<div class="progress">
+									<div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="60" style="width: 90%;">
+										90%
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1">
+								<small class="text-muted">精通</small>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="col-md-2 skill">
+								<span class="label label-warning">Javascript</span>
+							</div>
+							<div class="col-md-9">
+								<div class="progress">
+									<div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" style="width: 85%;">
+										85%
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1">
+								<small class="text-muted">掌握</small>
+							</div>
+						</div>
+					</dd>
+					<dt>工作经历：</dt>
+					<dd>
+						<small class="text-muted">
+							<span class="glyphicon glyphicon-time"></span>
+							2013年04月-2013年08月
+						</small>
+						<u>深圳市华宝微科技有限公司</u>
+						<small class="text-primary">Web前端工程师</small>
+					</dd>
+					<dd>
+						<small class="text-muted">
+							<span class="glyphicon glyphicon-time"></span>
+							2013年09月-至今
+						</small>
+						<u>深圳市房不剩房网络科技有限公司</u>
+						<small class="text-primary">Web前端工程师</small>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">
+					<h3>
+						<span class="glyphicon glyphicon-pencil"></span>&nbsp;自我描述
+					</h3>
+				</div>
+			</div>
+			<div class="panel-body">
+				<blockquote class="text-muted">
+					<p>工作上，利用html+css+js开发前端页面，会用sass，知道前端兼容的重要性，编辑器用sublime，前端自动化喜欢gulp，在前端技术日新月异的今天会翻阅收集到的各种前端博客。</p>
+					<p>生活上，对数码痴狂，表面冷淡内心狂热，为人友善。</p>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid footer">
+		<div class="col-md-12">
+			<div class="text-center text-muted">
+				<span class="glyphicon glyphicon-phone"></span> 电话：18566664087 　
+				<span class="glyphicon glyphicon-envelope"></span> 邮箱：joenillam@gmail.com
+			</div>
+		</div>
+	</div>
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

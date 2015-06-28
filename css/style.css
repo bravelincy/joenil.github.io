@@ -7,9 +7,12 @@ a, a:visited {
 
 body {
 	min-height: 100%;
+	line-height: 1.6;
+	background: #f2f2f2;
 }
 
 .list-unstyled {
+	padding: 0;
 	list-style: none;
 }
 
@@ -23,6 +26,7 @@ body {
 	line-height: 3em;
 	background: rgba(255,255,255, .8);
 	border-bottom: 1px solid #ccc;
+	margin-bottom: 2em;
 }
 
 .footer {
@@ -30,13 +34,73 @@ body {
 	bottom: 0;
 	left: 0;
 	width: 100%;
+	background: #333;
 	text-align: center;
 	font-size: .8em;
-	color: #ccc;
+	color: #888;
+}
+
+.footer a {
+	color: #EF8456;
 }
 
 .h-logo {
 	float: left;
 	margin-right: 1em;
 	font-size: 1.5em;
+}
+
+.h-logo a {
+	color: #EF8456;
+}
+
+.article-list li {
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: .5em solid #ddd;
+}
+
+.article-list li a {
+	transition: color .1s;
+}
+
+.article-list li a:hover {
+	color: #EF8456;
+}
+
+.al-time {
+	display: inline-block;
+	padding-top: .4em;
+	vertical-align: top;
+	font-size: .8em;
+	color: #787878;
+}
+
+.al-title {
+	display: inline-block;
+	margin-left: .5em;
+	font-size: 2em;
+}
+
+.article-header {
+	margin-bottom: 1em;
+}
+
+.article-header h1 {
+	margin: .2em 0;
+	line-height: 1;
+}
+
+.article-header span {
+	font-size: .8em;
+	color: #ccc;
+}
+
+.article-brief {
+	padding: .8em;
+	margin-bottom: 1em;
+	font-size: 1em;
+	line-height: 1.5;
+	background: #fff;
+	color: #787878;
 }

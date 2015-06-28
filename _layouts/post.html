@@ -13,9 +13,11 @@
 			<span>{{page.date}}</span>
 		</section>
 		<article>
+			{% if page.brief %}
 			<div class="article-brief">
 				{{page.brief}}
 			</div>
+			{% endif %}
 			{{ content }}
 		</article>
 	</div>

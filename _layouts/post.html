@@ -5,6 +5,15 @@
 	<title>{{ page.title }}</title>
 	<link rel="stylesheet" href="{{ site.base }}css/style.css">
 	<link rel="stylesheet" href="{{ site.base }}css/syntax.css">
+	<style>
+		#uyan_frame {
+			background: #fff;
+			padding: 1em;
+			margin-top: 2em;
+			min-height: 300px;
+			border: 1px solid #ddd;
+		}
+	</style>
 </head>
 <body>
 	{% include header.html %}
@@ -21,6 +30,10 @@
 			{% endif %}
 			{{ content }}
 		</article>
+		<!-- UY BEGIN -->
+		<div id="uyan_frame"></div>
+		<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2043181"></script>
+		<!-- UY END -->
 	</div>
 	{% include footer.html %}
 </body>

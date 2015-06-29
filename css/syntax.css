@@ -1,4 +1,4 @@
-.highlight  { background: #ffffff; padding: 1em; margin: .5em 0; border: 1px solid #ddd; font-size: .9em; }
+.highlight  { background: #ffffff; padding: 1em; margin: 1em 0; border: 1px solid #ddd; font-size: .9em; }
 .highlight pre { margin: 0; }
 .highlight .lineno { -webkit-user-select: none; user-select: none; color: #ccc; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */

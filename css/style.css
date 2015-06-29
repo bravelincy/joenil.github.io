@@ -17,7 +17,6 @@ code, kbd {
 }
 
 kbd {
-	/*border: 1px solid #ddd;*/
 	background: #555;
 	padding: .2em .3em;
 	margin: 0 .3em;
@@ -135,4 +134,5 @@ kbd {
 	line-height: 1.5;
 	background: #fff;
 	color: #787878;
+	border: 1px solid #ddd;
 }

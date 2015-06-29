@@ -68,11 +68,11 @@ kbd {
 	background: #333;
 	text-align: center;
 	font-size: .8em;
-	color: #888;
+	color: #666;
 }
 
 .footer a {
-	color: #EF8456;
+	color: #999;
 }
 
 .h-logo {
@@ -82,7 +82,7 @@ kbd {
 }
 
 .h-logo a {
-	color: #EF8456;
+	color: #2BB898;
 }
 
 .article-list li {
@@ -96,7 +96,7 @@ kbd {
 }
 
 .article-list li a:hover {
-	color: #EF8456;
+	color: #2BB898;
 }
 
 .al-time {

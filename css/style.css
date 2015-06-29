@@ -1,14 +1,32 @@
 @import url(normalize.css);
 
+body {
+	min-height: 100%;
+	line-height: 1.6;
+	font-family: Verdana, Tahoma, Arial;
+	background: #f2f2f2;
+}
+
 a, a:visited {
 	text-decoration: none;
 	color: #333;
 }
 
-body {
-	min-height: 100%;
-	line-height: 1.6;
-	background: #f2f2f2;
+code, kbd {
+	font-family: Consolas, monospace;
+}
+
+kbd {
+	/*border: 1px solid #ddd;*/
+	background: #555;
+	padding: .2em .3em;
+	margin: 0 .3em;
+	height: .8em;
+	line-height: .8em;
+	border-radius: .3em;
+	font-size: .9em;
+	color: #eee;
+	vertical-align: middle;
 }
 
 .list-unstyled {

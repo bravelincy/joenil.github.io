@@ -1,6 +1,11 @@
 @import url(normalize.css);
 
+html {
+	height: 100%;
+}
+
 body {
+	position: relative;
 	min-height: 100%;
 	line-height: 1.6;
 	font-family: Verdana, Tahoma, Arial;
@@ -36,6 +41,10 @@ kbd {
 .wrap {
 	width: 1000px;
 	margin: auto;
+}
+
+.main {
+	padding-bottom: 3em;
 }
 
 .header {

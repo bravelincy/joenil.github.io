@@ -1,1 +1,25 @@
-require(["base"],function(e){function n(){if("complete"===document.readyState){var e=Date.now(),n=e-a;setTimeout(function(){t.classList.remove("loading")},999-n)}}var a=Date.now(),t=e("body"),o=e(".panel-main"),c=e("#scroll-btn");e(".banner");n(),e.on(document,"readystatechange",n),e.on(c,"click",function(){o.classList.add("panel-main-free")})});
+require(['base'], function ($) {
+	var initPageTime = Date.now();
+	var body = $('body');
+	var mainPanel = $('.panel-main');
+	var scrollBtn = $('#scroll-btn');
+	var banner = $('.banner');
+
+	function checkReadyState() {
+		if (document.readyState === 'complete') {
+			var now = Date.now();
+			var costTime = now - initPageTime;
+
+			setTimeout(function () {
+				body.classList.remove('loading');
+			}, 999 - costTime);
+		}
+	}
+
+	checkReadyState();
+	$.on(document, 'readystatechange', checkReadyState);
+
+	$.on(scrollBtn, 'click', function () {
+		mainPanel.classList.add('panel-main-free');
+	});
+});

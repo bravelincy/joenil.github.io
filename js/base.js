@@ -1,1 +1,12 @@
-define(function(n,e,t){function r(n){var e=document.querySelectorAll(n);return e.length>1?e:e[0]}return r.on=function(n,e,t,r){n.addEventListener(e,t,r)},r});
+define(function (require, exports, module) {
+	function $(selector) {
+		var elements = document.querySelectorAll(selector);
+		return elements.length > 1 ? elements : elements[0]; 
+	}
+
+	$.on = function (element, evtName, fn, useCapture) {
+		element.addEventListener(evtName, fn, useCapture);
+	};
+
+	return $;
+});

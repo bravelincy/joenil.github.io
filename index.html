@@ -1,17 +1,179 @@
----
-layout: default
-title: 林朝涌的博客
----
-
-<ul class="list-unstyled article-list">
-	{% for post in site.posts %}
-	<li>
-		<span class="al-time">
-			{{ post.date | date_to_string }}
-		</span>
-		<a href="{{ site.baseurl }}{{ post.url }}" class="al-title">
-			{{ post.title }}
-		</a>
-	</li>
-	{% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>林朝涌</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="apple-mobile-web-app-title" content="我的简历">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/logo.png">
+	<link rel="stylesheet" href="css/index.min.css">
+	<script src="js/require.js" data-main="js/resume"></script>
+</head>
+<body class="loading">
+	<article class="panel-main">
+		<div class="banner">
+			<div class="banner-text">
+				<h1>
+					Joenil Lam
+					<small>林朝涌</small>
+				</h1>
+				<p>比设计师更懂程序，比程序员更懂设计</p>
+				<a class="btn btn-ghost" id="scroll-btn">浏览简历</a>
+			</div>
+			<div class="pure-bg"></div>
+			<div class="icon-strips">
+				<i class="strip1"></i>
+				<i class="strip2"></i>
+				<i class="strip3"></i>
+			</div>
+		</div>
+		<section class="info-section">
+			<div class="info-head">
+				<strong>个人简介</strong>
+				<span>Introduce</span>
+			</div>
+			<ul class="list-strip">
+				<li>
+					<span class="li-name">姓名</span>
+					<p class="li-content">林朝涌</p>
+				</li>
+				<li>
+					<span class="li-name">生日</span>
+					<p class="li-content">1993年7月</p>
+				</li>
+				<li>
+					<span class="li-name">籍贯</span>
+					<p class="li-content">福建省</p>
+				</li>
+				<li>
+					<span class="li-name">职业</span>
+					<p class="li-content">前端开发</p>
+				</li>
+				<li>
+					<span class="li-name">兴趣</span>
+					<p class="li-content">电影、数码、广东话</p>
+				</li>
+			</ul>
+		</section>
+		<section class="info-section education">
+			<div class="info-head">
+				<strong>求学之路</strong>
+				<span>Education</span>
+			</div>
+			<ul class="list-process">
+				<li>
+					<span class="li-name">08.09-12.07</span>
+					<div class="li-content">
+						<span class="scholl">鸿图中学</span>
+						<span class="detail">高中</span>
+					</div>
+				</li>
+				<li>
+					<span class="li-name">14.10-16.07</span>
+					<div class="li-content">
+						<span class="scholl">西安交大</span>
+						<span class="detail">大专(计算机)</span>
+					</div>
+				</li>
+				<li>
+					<span class="li-name">目前</span>
+					<div class="li-content">
+						<span class="scholl">自考筹备中</span>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="info-section career">
+			<div class="info-head">
+				<strong>从业轨迹</strong>
+				<span>Career</span>
+			</div>
+			<ul class="list-process">
+				<li>
+					<span class="li-name">13.04-13.09</span>
+					<div class="li-content">
+						<div class="clearfix">
+							<span class="company">华宝微科技</span>
+							<span class="duty">网页设计</span>
+						</div>
+						<p class="detail">公司企业官网设计</p>
+					</div>
+				</li>
+				<li>
+					<span class="li-name">13.09-15.04</span>
+					<div class="li-content">
+						<div class="clearfix">
+							<a class="company" href="http://www.88hom.com" target="_blank">房不剩房网络</a>
+							<span class="duty">前端开发</span>
+						</div>
+						<p class="detail">门户网站、微信服务号前端开发</p>
+					</div>
+				</li>
+				<li>
+					<span class="li-name">15.04-至今</span>
+					<div class="li-content">
+						<div class="clearfix">
+							<a class="company" href="http://m.comicool.cn" target="_blank">可米酷漫画</a>
+							<span class="duty">前端开发</span>
+						</div>
+						<p class="detail">漫画平台、ERP后台、H5活动页开发</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section class="info-section skills">
+			<div class="info-head">
+				<strong>几技傍身</strong>
+				<span>Skills</span>
+			</div>
+			<ul class="list-percent">
+				<li>
+					<div class="percent-circle">
+						<span class="percent-num">90</span>
+						HTML5
+					</div>
+				</li>
+				<li>
+					<div class="percent-circle">
+						<span class="percent-num">85</span>
+						CSS3
+					</div>
+				</li>
+				<li>
+					<div class="percent-circle">
+						<span class="percent-num">85</span>
+						Javascript
+					</div>
+				</li>
+			</ul>
+			<p class="other-skills">其他：Photoshop·git·gulp·jQuery·zepto·Bootstrap</p>
+		</section>
+		<section class="info-section">
+			<div class="info-head">
+				<strong>与我联系</strong>
+				<span>Contact</span>
+			</div>
+			<ul class="list-strip">
+				<li>
+					<span class="li-name">电话</span>
+					<p class="li-content">18566664087</p>
+				</li>
+				<li>
+					<span class="li-name">邮箱</span>
+					<p class="li-content">joenillam@gmail.com</p>
+				</li>
+				<li>
+					<span class="li-name">微信</span>
+					<p class="li-content">choraln</p>
+				</li>
+				<li>
+					<span class="li-name">Q Q</span>
+					<p class="li-content">40872937</p>
+				</li>
+			</ul>
+		</section>
+	</article>
+</body>
+</html>

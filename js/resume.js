@@ -1,0 +1,1 @@
+require(["base"],function(e){function n(){if("complete"===document.readyState){var e=Date.now(),n=e-a;setTimeout(function(){t.classList.remove("loading")},999-n)}}var a=Date.now(),t=e("body"),o=e(".panel-main"),c=e("#scroll-btn");e(".banner");n(),e.on(document,"readystatechange",n),e.on(c,"click",function(){o.classList.add("panel-main-free")})});

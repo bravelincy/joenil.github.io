@@ -12,6 +12,15 @@
 <script src="js/require.js" data-main="js/resume"></script>
 </head>
 <body class="loading">
+    <aside class="panel-left">
+        <nav>
+            <a data-href="#summary">个人简介</a>
+            <a data-href="#education">求学之路</a>
+            <a data-href="#career">从业轨迹</a>
+            <a data-href="#skills">几技傍身</a>
+            <a data-href="#contact">与我联系</a>
+        </nav>
+    </aside>
     <article class="panel-main">
         <div class="banner">
             <div class="banner-text">
@@ -29,10 +38,10 @@
                 <i class="strip3"></i>
             </div>
         </div>
-        <section class="info-section">
+        <section class="info-section" id="summary" name="summary">
             <div class="info-head">
                 <strong>个人简介</strong>
-                <span>Introduce</span>
+                <span>Summary</span>
             </div>
             <ul class="list-strip">
                 <li>
@@ -57,7 +66,7 @@
                 </li>
             </ul>
         </section>
-        <section class="info-section education">
+        <section class="info-section education" id="education" name="education">
             <div class="info-head">
                 <strong>求学之路</strong>
                 <span>Education</span>
@@ -85,7 +94,7 @@
                 </li>
             </ul>
         </section>
-        <section class="info-section career">
+        <section class="info-section career" id="career" name="career">
             <div class="info-head">
                 <strong>从业轨迹</strong>
                 <span>Career</span>
@@ -127,7 +136,7 @@
                 </li>
             </ul>
         </section>
-        <section class="info-section skills">
+        <section class="info-section skills" id="skills" name="skills">
             <div class="info-head">
                 <strong>几技傍身</strong>
                 <span>Skills</span>
@@ -161,7 +170,7 @@
                 <span>Bootstrap</span>
             </p>
         </section>
-        <section class="info-section">
+        <section class="info-section" id="contact" name="contact">
             <div class="info-head">
                 <strong>与我联系</strong>
                 <span>Contact</span>
